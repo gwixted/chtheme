@@ -49,8 +49,9 @@ header#header {
   a.logo {
     align-self: center;
     display: inline-block;
-    max-width: 200px;
-    img { @include fluidImg(); }
+    font-family: $headline;
+    font-size: 2.0rem;
+    color: $blue;
   }//a.logo
   // nav#menu in _navigation.scss
   .mobile-trigger {
