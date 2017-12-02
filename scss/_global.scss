@@ -18,7 +18,6 @@ $headerHeightMed: 70px;
   max-width: 1300px;
   margin: auto;
   @include plr();
-  background: $white;
   @include breakpoint(med) { // 768 - MEDIUM =================================
     @include plr(4%,4%);
   }//medium
@@ -99,6 +98,9 @@ header#header {
 //  FOOTER
 // ============================================================
 footer#footer {
+  background: $primary;
+  color: $white;
+  a { color: $white; }
   ul.sn-icons {
     display: flex;
     justify-content: flex-end;
@@ -106,8 +108,8 @@ footer#footer {
     font-size: 2.0em;
     li { margin-left: 25px; }
     a {
-      color: $primary;
-      &:hover { color: lighten($primary,10%); }
+      color: $white;
+      &:hover { color: lighten($primary,40%); }
     }
   }//ul.sn-icons
   .copyright { @extend .small; }
